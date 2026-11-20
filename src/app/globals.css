@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", "Noto Sans Arabic", "Noto Kufi Arabic", Tahoma, system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  background-image:
+    radial-gradient(1200px 600px at 85% -10%, rgba(168, 85, 247, 0.12), transparent 60%),
+    radial-gradient(900px 500px at 5% 20%, rgba(34, 211, 238, 0.07), transparent 60%);
+  background-attachment: fixed;
+}
+
+::selection {
+  background: rgba(217, 70, 239, 0.45);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.18) transparent;
+}
+
+select option {
+  background: #12131a;
+  color: #fff;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid rgba(232, 121, 249, 0.8);
+  outline-offset: 2px;
+}
